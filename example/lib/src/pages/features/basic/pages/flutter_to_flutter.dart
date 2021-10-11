@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:g_faraday/g_faraday.dart';
+import 'package:get/get.dart';
 
 class Flutter2Flutter extends StatefulWidget {
   final int? index;
@@ -32,17 +33,17 @@ class _Flutter2FlutterState extends State<Flutter2Flutter> {
               TextButton(
                 child: Text('Open New Flutter Page'),
                 onPressed: () {
-                  Navigator.of(context).push(
-                    CupertinoPageRoute(
-                      builder: (_) => Flutter2Flutter(
-                        index: (widget.index ?? 0) + 1,
-                      ),
-                    ),
-                  );
+                  // Navigator.of(context).push(
+                  //   CupertinoPageRoute(
+                  //     builder: (_) => Flutter2Flutter(
+                  //       index: (widget.index ?? 0) + 1,
+                  //     ),
+                  //   ),
+                  // );
 
                   // router.navigateTo(context, '/flutter2flutter');
 
-                  // Get.to(Flutter2Flutter(index: (widget.index ?? 0) + 1));
+                  Get.toNamed('/flutter2flutter');
                 },
               ),
               TextButton(
