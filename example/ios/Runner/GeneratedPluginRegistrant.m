@@ -6,10 +6,10 @@
 
 #import "GeneratedPluginRegistrant.h"
 
-#if __has_include(<g_faraday/GFaradayPlugin.h>)
-#import <g_faraday/GFaradayPlugin.h>
+#if __has_include(<g_faraday_k/GFaradayPlugin.h>)
+#import <g_faraday_k/GFaradayPlugin.h>
 #else
-@import g_faraday;
+@import g_faraday_k;
 #endif
 
 @implementation GeneratedPluginRegistrant

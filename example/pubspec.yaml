@@ -13,7 +13,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  g_faraday:
+  g_faraday_k:
     # When depending on this package from a real application you should use:
     #   g_faraday: ^x.y.z
     # See https://dart.dev/tools/pub/dependencies#version-constraints

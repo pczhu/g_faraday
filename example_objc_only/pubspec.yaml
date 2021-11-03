@@ -23,7 +23,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  g_faraday:
+  g_faraday_k:
     path: ../
 
 
