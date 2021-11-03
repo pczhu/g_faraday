@@ -1,49 +1,51 @@
-# ![log](./doc/images/logo.png)  Faraday [English](./README_EN.md)
-
-![Build](https://img.shields.io/github/workflow/status/gfaraday/g_faraday/Publisher/master?logo=github&style=for-the-badge)
-![pub_Version](https://img.shields.io/pub/v/g_faraday?include_prereleases&style=for-the-badge&logo=data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNjAwcHgiIGhlaWdodD0iNjAwcHgiIHZpZXdCb3g9IjAgMCA2MDAgNjAwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPHRpdGxlPmZhcmFkYXk8L3RpdGxlPgogICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IHgxPSIxMC42ODAxNzA0JSIgeTE9IjI2Ljk5MzAyODclIiB4Mj0iNzIuMTEzMDU3NiUiIHkyPSI1Mi45MTkyNjU3JSIgaWQ9ImxpbmVhckdyYWRpZW50LTEiPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMDAwMDAwIiBvZmZzZXQ9IjAlIj48L3N0b3A+CiAgICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMCIgb2Zmc2V0PSIxMDAlIj48L3N0b3A+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJmYXJhZGF5IiBmaWxsLXJ1bGU9Im5vbnplcm8iPgogICAgICAgICAgICA8ZyBpZD0iR3JvdXAiPgogICAgICAgICAgICAgICAgPGcgaWQ9ImZsdXR0ZXItc2Vla2xvZ28uY29tIj4KICAgICAgICAgICAgICAgICAgICA8cG9seWdvbiBpZD0iUGF0aCIgZmlsbD0iI0VCRkNGNCIgcG9pbnRzPSIyMDQuNTY2ODQ1IDAgMCAyMjEuOTI4NzQ2IDYzLjMxNzM1OSAyOTAuNjE5OTQ2IDMzMS4yMDI5ODkgMCI+PC9wb2x5Z29uPgogICAgICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBmaWxsPSIjRUJGQ0Y0IiBwb2ludHM9IjIwMy4zNDU5MzggMjA0LjI0MTI0IDkzLjk5MDAzNzQgMzIyLjYyMDg5OSAxNTcuNDQzOTAxIDM5Mi4zMzY5MjcgMjIwLjU0MzM2OCAzMjQuMDMwNjU4IDMzMS4yMDI5ODkgMjA0LjI0MTI0Ij48L3BvbHlnb24+CiAgICAgICAgICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlBhdGgiIGZpbGw9IiNFQkZDRjQiIHBvaW50cz0iMTU3LjM5NjAxNSAzOTIuODE5ODQxIDIwNS40NDUxNzMgNDQ0LjgwOTk3MyAzMzEuMjAyOTg5IDQ0NC44MDk5NzMgMjIwLjUxMTk2NSAzMjQuNTI1NjA2Ij48L3BvbHlnb24+CiAgICAgICAgICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlBhdGgiIGZpbGw9IiNFQkZDRjQiIHBvaW50cz0iOTMuMjQ0MDg0NyAzMjMuODY0MiAxNTYuNjA3OTA4IDI1NS4wOTk3MyAyMjAuODAxOTkzIDMyNC41MDgyMzIgMTU3LjU1ODAwMSAzOTMuMTQ0MjA1Ij48L3BvbHlnb24+CiAgICAgICAgICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlBhdGgiIGZpbGwtb3BhY2l0eT0iMC44IiBmaWxsPSJ1cmwoI2xpbmVhckdyYWRpZW50LTEpIiBwb2ludHM9IjE1Ny4zOTYwMTUgMzkyLjMzNjkyNyAyMTAuMzIyOTA0IDM3My4zMzA1NzYgMjE1LjU4MDMyNCAzMjkuMzY5MjcyIj48L3BvbHlnb24+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICA8ZyBpZD0iZmx1dHRlci1zZWVrbG9nby5jb20iIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI2Ny43OTcwMTEsIDE1NC4xOTAwMjcpIiBmaWxsPSIjRUJGQ0Y0Ij4KICAgICAgICAgICAgICAgICAgICA8cG9seWdvbiBpZD0iUGF0aCIgcG9pbnRzPSIyMDQuNTY2ODQ1IDAgMCAyMjEuOTI4NzQ2IDYzLjMxNzM1OSAyOTAuNjE5OTQ2IDMzMS4yMDI5ODkgMCI+PC9wb2x5Z29uPgogICAgICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBwb2ludHM9IjIwMy4zNDU5MzggMjA0LjI0MTI0IDkzLjk5MDAzNzQgMzIyLjYyMDg5OSAxNTcuNDQzOTAxIDM5Mi4zMzY5MjcgMjIwLjU0MzM2OCAzMjQuMDMwNjU4IDMzMS4yMDI5ODkgMjA0LjI0MTI0Ij48L3BvbHlnb24+CiAgICAgICAgICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlBhdGgiIHBvaW50cz0iMTU3LjM5NjAxNSAzOTIuODE5ODQxIDIwNS40NDUxNzMgNDQ0LjgwOTk3MyAzMzEuMjAyOTg5IDQ0NC44MDk5NzMgMjIwLjUxMTk2NSAzMjQuNTI1NjA2Ij48L3BvbHlnb24+CiAgICAgICAgICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlBhdGgiIHBvaW50cz0iOTMuMjQ0MDg0NyAzMjMuODY0MiAxNTYuNjA3OTA4IDI1NS4wOTk3MyAyMjAuODAxOTkzIDMyNC41MDgyMzIgMTU3LjU1ODAwMSAzOTMuMTQ0MjA1Ij48L3BvbHlnb24+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==)
-![Flutter_Version](https://img.shields.io/badge/Flutter-stable-blue?style=for-the-badge&logo=flutter)
-![License](https://img.shields.io/github/license/gfaraday/g_faraday?style=for-the-badge)
-
-[一个`Flutter`混合栈开发解决方案](https://juejin.cn/post/6911985354488676365)
-
-## Features
-
-- [x] 支持`ios`、`android`、`flutter`三端所有原生路由(页面切换)跳转行为
-- [x] 支持混合栈(native -> flutter -> native)路由跳转(popTo、replace ...)
-- [x] 支持flutter页面作为root页面
-- [x] 支持flutter作为子页面加入原生堆栈
-- [x] 支持flutter作为弹出页面(背景透明到native层)
-- [x] [页面间回调传值完整支持](doc/callback.md)
-- [x] [iOS导航条自动隐藏/显示](doc/ios_navigation_bar.md)
-- [x] `WillPopScope`拦截滑动返回(ios)或者返回按键键(android)
-- [x] [发送/接收全局通知](doc/notification.md)
-- [x] 支持自定义页面切换动画
-- [x] 支持完整的生命周期监听
-- [ ] 单元测试
-- [x] 完整的文档(7/10)
-
-## 使用`g_faraday`的APP
-
-| 序号 | 名称   | 版本号 | iOS                                                                            | Android                                                         |
-| ---- | ------ | ------ | ------------------------------------------------------------------------------ | --------------------------------------------------------------- |
-| 0    | 寓小二 | 8.0.0  | [AppStore](https://apps.apple.com/cn/app/寓小二-公寓系统定制专家/id1081403007) | [应用宝](https://a.app.qq.com/o/simple.jsp?pkgname=com.yuxiaor) |
-
-> 您的app也在使用?[联系我们](#Communication)
-
-## Show Cases
-
-![demo](doc/images/demo.png)
-
-## Example App
-
-[Android下载apk](https://github.com/gfaraday/g_faraday/releases/download/v0.5.0-nullsafety.3/appv2.apk)
-
-<!-- [iOS下载app](https://github.com/gfaraday/g_faraday/releases/download/0.4.2/example.app.zip)
-> [模拟器安装app](doc/ios-simulator-install.md) -->
-
-## 设计原则
-
+### feature add: 
+- 添加 NavigatorKeyCallback,支持回调 FaradayNavigator 到外部使用
+> # ![log](./doc/images/logo.png)  Faraday [English](./README_EN.md)
+> 
+> ![Build](https://img.shields.io/github/workflow/status/gfaraday/g_faraday/Publisher/master?logo=github&style=for-the-badge)
+> ![pub_Version](https://img.shields.io/pub/v/g_faraday?include_prereleases&style=for-the-badge&logo=data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNjAwcHgiIGhlaWdodD0iNjAwcHgiIHZpZXdCb3g9IjAgMCA2MDAgNjAwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPHRpdGxlPmZhcmFkYXk8L3RpdGxlPgogICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IHgxPSIxMC42ODAxNzA0JSIgeTE9IjI2Ljk5MzAyODclIiB4Mj0iNzIuMTEzMDU3NiUiIHkyPSI1Mi45MTkyNjU3JSIgaWQ9ImxpbmVhckdyYWRpZW50LTEiPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMDAwMDAwIiBvZmZzZXQ9IjAlIj48L3N0b3A+CiAgICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMCIgb2Zmc2V0PSIxMDAlIj48L3N0b3A+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJmYXJhZGF5IiBmaWxsLXJ1bGU9Im5vbnplcm8iPgogICAgICAgICAgICA8ZyBpZD0iR3JvdXAiPgogICAgICAgICAgICAgICAgPGcgaWQ9ImZsdXR0ZXItc2Vla2xvZ28uY29tIj4KICAgICAgICAgICAgICAgICAgICA8cG9seWdvbiBpZD0iUGF0aCIgZmlsbD0iI0VCRkNGNCIgcG9pbnRzPSIyMDQuNTY2ODQ1IDAgMCAyMjEuOTI4NzQ2IDYzLjMxNzM1OSAyOTAuNjE5OTQ2IDMzMS4yMDI5ODkgMCI+PC9wb2x5Z29uPgogICAgICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBmaWxsPSIjRUJGQ0Y0IiBwb2ludHM9IjIwMy4zNDU5MzggMjA0LjI0MTI0IDkzLjk5MDAzNzQgMzIyLjYyMDg5OSAxNTcuNDQzOTAxIDM5Mi4zMzY5MjcgMjIwLjU0MzM2OCAzMjQuMDMwNjU4IDMzMS4yMDI5ODkgMjA0LjI0MTI0Ij48L3BvbHlnb24+CiAgICAgICAgICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlBhdGgiIGZpbGw9IiNFQkZDRjQiIHBvaW50cz0iMTU3LjM5NjAxNSAzOTIuODE5ODQxIDIwNS40NDUxNzMgNDQ0LjgwOTk3MyAzMzEuMjAyOTg5IDQ0NC44MDk5NzMgMjIwLjUxMTk2NSAzMjQuNTI1NjA2Ij48L3BvbHlnb24+CiAgICAgICAgICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlBhdGgiIGZpbGw9IiNFQkZDRjQiIHBvaW50cz0iOTMuMjQ0MDg0NyAzMjMuODY0MiAxNTYuNjA3OTA4IDI1NS4wOTk3MyAyMjAuODAxOTkzIDMyNC41MDgyMzIgMTU3LjU1ODAwMSAzOTMuMTQ0MjA1Ij48L3BvbHlnb24+CiAgICAgICAgICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlBhdGgiIGZpbGwtb3BhY2l0eT0iMC44IiBmaWxsPSJ1cmwoI2xpbmVhckdyYWRpZW50LTEpIiBwb2ludHM9IjE1Ny4zOTYwMTUgMzkyLjMzNjkyNyAyMTAuMzIyOTA0IDM3My4zMzA1NzYgMjE1LjU4MDMyNCAzMjkuMzY5MjcyIj48L3BvbHlnb24+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICA8ZyBpZD0iZmx1dHRlci1zZWVrbG9nby5jb20iIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI2Ny43OTcwMTEsIDE1NC4xOTAwMjcpIiBmaWxsPSIjRUJGQ0Y0Ij4KICAgICAgICAgICAgICAgICAgICA8cG9seWdvbiBpZD0iUGF0aCIgcG9pbnRzPSIyMDQuNTY2ODQ1IDAgMCAyMjEuOTI4NzQ2IDYzLjMxNzM1OSAyOTAuNjE5OTQ2IDMzMS4yMDI5ODkgMCI+PC9wb2x5Z29uPgogICAgICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBwb2ludHM9IjIwMy4zNDU5MzggMjA0LjI0MTI0IDkzLjk5MDAzNzQgMzIyLjYyMDg5OSAxNTcuNDQzOTAxIDM5Mi4zMzY5MjcgMjIwLjU0MzM2OCAzMjQuMDMwNjU4IDMzMS4yMDI5ODkgMjA0LjI0MTI0Ij48L3BvbHlnb24+CiAgICAgICAgICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlBhdGgiIHBvaW50cz0iMTU3LjM5NjAxNSAzOTIuODE5ODQxIDIwNS40NDUxNzMgNDQ0LjgwOTk3MyAzMzEuMjAyOTg5IDQ0NC44MDk5NzMgMjIwLjUxMTk2NSAzMjQuNTI1NjA2Ij48L3BvbHlnb24+CiAgICAgICAgICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlBhdGgiIHBvaW50cz0iOTMuMjQ0MDg0NyAzMjMuODY0MiAxNTYuNjA3OTA4IDI1NS4wOTk3MyAyMjAuODAxOTkzIDMyNC41MDgyMzIgMTU3LjU1ODAwMSAzOTMuMTQ0MjA1Ij48L3BvbHlnb24+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==)
+> ![Flutter_Version](https://img.shields.io/badge/Flutter-stable-blue?style=for-the-badge&logo=flutter)
+> ![License](https://img.shields.io/github/license/gfaraday/g_faraday?style=for-the-badge)
+> 
+> [一个`Flutter`混合栈开发解决方案](https://juejin.cn/post/6911985354488676365)
+> 
+> ## Features
+> 
+> - [x] 支持`ios`、`android`、`flutter`三端所有原生路由(页面切换)跳转行为
+> - [x] 支持混合栈(native -> flutter -> native)路由跳转(popTo、replace ...)
+> - [x] 支持flutter页面作为root页面
+> - [x] 支持flutter作为子页面加入原生堆栈
+> - [x] 支持flutter作为弹出页面(背景透明到native层)
+> - [x] [页面间回调传值完整支持](doc/callback.md)
+> - [x] [iOS导航条自动隐藏/显示](doc/ios_navigation_bar.md)
+> - [x] `WillPopScope`拦截滑动返回(ios)或者返回按键键(android)
+> - [x] [发送/接收全局通知](doc/notification.md)
+> - [x] 支持自定义页面切换动画
+> - [x] 支持完整的生命周期监听
+> - [ ] 单元测试
+> - [x] 完整的文档(7/10)
+> 
+> ## 使用`g_faraday`的APP
+> 
+> | 序号 | 名称   | 版本号 | iOS                                                                            | Android                                                         |
+> | ---- | ------ | ------ | ------------------------------------------------------------------------------ | --------------------------------------------------------------- |
+> | 0    | 寓小二 | 8.0.0  | [AppStore](https://apps.apple.com/cn/app/寓小二-公寓系统定制专家/id1081403007) | [应用宝](https://a.app.qq.com/o/simple.jsp?pkgname=com.yuxiaor) |
+> 
+> > 您的app也在使用?[联系我们](#Communication)
+> 
+> ## Show Cases
+> 
+> ![demo](doc/images/demo.png)
+> 
+> ## Example App
+> 
+> [Android下载apk](https://github.com/gfaraday/g_faraday/releases/download/v0.5.0-nullsafety.3/appv2.apk)
+> 
+> <!-- [iOS下载app](https://github.com/gfaraday/g_faraday/releases/download/0.4.2/example.app.zip)
+> > [模拟器安装app](doc/ios-simulator-install.md) -->
+> 
+> ## 设计原则
+> 
 - 对原有平台最小侵入
 - 对现有代码最小改动
 - API尽量保持和原有平台一致
