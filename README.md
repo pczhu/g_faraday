@@ -1,5 +1,7 @@
 ### feature add: 
-- 添加 NavigatorKeyCallback,支持回调 FaradayNavigator 到外部使用
+- 添加 NavigatorKeyCallback,支持回调 FaradayNavigator 到外部使用  
+
+*由于原仓库一直没有合并该feature,所以我自己在pub.dev上传了一份,可以直接使用:[g_faraday_k](https://pub.dev/packages/g_faraday_k/activity-log)*
 > # ![log](./doc/images/logo.png)  Faraday [English](./README_EN.md)
 > 
 > ![Build](https://img.shields.io/github/workflow/status/gfaraday/g_faraday/Publisher/master?logo=github&style=for-the-badge)
